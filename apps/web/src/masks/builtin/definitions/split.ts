@@ -258,7 +258,7 @@ export const splitMaskDefinition: MaskDefinition<"split"> = {
 		},
 		{
 			key: "rotation",
-			label: "Rotation",
+			label: "旋转",
 			type: "number",
 			default: 0,
 			min: 0,

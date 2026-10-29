@@ -89,7 +89,7 @@ export const metadata: Metadata = {
 export default function RoadmapPage() {
 	return (
 		<BasePage
-			title="Roadmap"
+			title="开发计划"
 			description={`What's coming next for OpenCut (last updated: ${LAST_UPDATED})`}
 		>
 			<div className="mx-auto flex max-w-4xl flex-col gap-16">

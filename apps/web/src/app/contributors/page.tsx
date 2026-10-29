@@ -69,7 +69,7 @@ export default async function ContributorsPage() {
 
 	return (
 		<BasePage
-			title="Contributors"
+			title="贡献者"
 			description="Meet the amazing people who contribute to OpenCut, the free and open-source video editor."
 		>
 			<div className="-mt-4 flex items-center justify-center gap-8 text-sm">

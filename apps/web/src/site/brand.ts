@@ -3,7 +3,7 @@ export const SITE_URL = "https://opencut.app";
 export const SITE_INFO = {
 	title: "OpenCut",
 	description:
-		"A simple but powerful video editor that gets the job done. In your browser.",
+		"在浏览器中使用简单而强大的视频编辑器。",
 	url: SITE_URL,
 	openGraphImage: "/open-graph/default.jpg",
 	twitterImage: "/open-graph/default.jpg",

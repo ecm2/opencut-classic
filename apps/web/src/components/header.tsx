@@ -31,19 +31,19 @@ export function Header() {
 
 	const links = [
 		{
-			label: "Roadmap",
+			label: "开发计划",
 			href: "/roadmap",
 		},
 		{
-			label: "Contributors",
+			label: "贡献者",
 			href: "/contributors",
 		},
 		{
-			label: "Sponsors",
+			label: "赞助者",
 			href: "/sponsors",
 		},
 		{
-			label: "Blog",
+			label: "博客",
 			href: "/blog",
 		},
 	];
@@ -57,7 +57,7 @@ export function Header() {
 							<Link href="/" className="flex items-center gap-3">
 								<Image
 									src={DEFAULT_LOGO_URL}
-									alt="OpenCut Logo"
+									alt="OpenCut 标志"
 									className="invert dark:invert-0"
 									width={32}
 									height={32}
@@ -73,7 +73,7 @@ export function Header() {
 								}}
 							>
 								<HugeiconsIcon icon={Copy01Icon} />
-								Copy SVG
+								复制 SVG
 							</ContextMenuItem>
 							<ContextMenuItem
 								onClick={() => {
@@ -84,12 +84,12 @@ export function Header() {
 								}}
 							>
 								<HugeiconsIcon icon={Download01Icon} />
-								Download SVG
+								下载 SVG
 							</ContextMenuItem>
 							<Link href="/brand">
 								<ContextMenuItem>
 									<HugeiconsIcon icon={LinkSquare02Icon} />
-									Brand assets
+									品牌资源
 								</ContextMenuItem>
 							</Link>
 						</ContextMenuContent>
@@ -126,7 +126,7 @@ export function Header() {
 						</Link>
 						<Link href="/projects">
 							<Button className="text-sm">
-								Projects
+								项目
 								<ArrowRight className="size-4" />
 							</Button>
 						</Link>
@@ -143,7 +143,7 @@ export function Header() {
 					<div className="relative h-full">
 						<button
 							type="button"
-							aria-label="Close menu"
+							aria-label="关闭菜单"
 							className="absolute inset-0"
 							onClick={closeMenu}
 							onKeyDown={(event) => {

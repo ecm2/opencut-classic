@@ -23,7 +23,7 @@ export default async function BlogPage() {
 
 	return (
 		<BasePage
-			title="Blog"
+			title="博客"
 			description="Read the latest news and updates about OpenCut, the free and open-source video editor."
 		>
 			<div className="flex flex-col">

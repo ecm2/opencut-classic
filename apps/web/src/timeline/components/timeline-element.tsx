@@ -427,7 +427,7 @@ export function TimelineElement({
 						action="split"
 						icon={<HugeiconsIcon icon={ScissorIcon} />}
 					>
-						Split
+						分割
 					</ActionMenuItem>
 					<CopyMenuItem />
 					{selectedElements.length === 1 && (
@@ -435,7 +435,7 @@ export function TimelineElement({
 							action="duplicate-selected"
 							icon={<HugeiconsIcon icon={Copy01Icon} />}
 						>
-							Duplicate
+							创建副本
 						</ActionMenuItem>
 					)}
 					{canElementHaveAudio(element) && hasAudio && (
@@ -477,7 +477,7 @@ export function TimelineElement({
 								toggleElementExpanded(element.id);
 							}}
 						>
-							{isExpanded ? "Collapse keyframes" : "Expand keyframes"}
+							{isExpanded ? "收起关键帧" : "展开关键帧"}
 						</ContextMenuItem>
 					)}
 					{selectedElements.length === 1 && hasMediaId(element) && (
@@ -488,13 +488,13 @@ export function TimelineElement({
 									handleRevealInMedia({ event })
 								}
 							>
-								Reveal media
+								定位素材
 							</ContextMenuItem>
 							<ContextMenuItem
 								icon={<HugeiconsIcon icon={Exchange01Icon} />}
 								disabled
 							>
-								Replace media
+								替换素材
 							</ContextMenuItem>
 						</>
 					)}
@@ -722,7 +722,7 @@ function KeyframeIndicators({
 						indicatorTime: indicator.time,
 					})
 				}
-				aria-label="Select keyframe"
+				aria-label="选择关键帧"
 			>
 				<HugeiconsIcon
 					icon={KeyframeIcon}
@@ -875,7 +875,7 @@ function ExpandedKeyframeLanes({
 											indicatorTime: kf.time,
 										});
 									}}
-									aria-label="Select keyframe"
+									aria-label="选择关键帧"
 								>
 									<HugeiconsIcon
 										icon={KeyframeIcon}
@@ -1187,7 +1187,7 @@ function CopyMenuItem() {
 			action="copy-selected"
 			icon={<HugeiconsIcon icon={Copy01Icon} />}
 		>
-			Copy
+			复制
 		</ActionMenuItem>
 	);
 }
@@ -1214,7 +1214,7 @@ function MuteMenuItem({
 
 	return (
 		<ActionMenuItem action="toggle-elements-muted-selected" icon={getIcon()}>
-			{isMuted ? "Unmute" : "Mute"}
+			{isMuted ? "取消静音" : "静音"}
 		</ActionMenuItem>
 	);
 }
@@ -1246,7 +1246,7 @@ function VisibilityMenuItem({
 			action="toggle-elements-visibility-selected"
 			icon={getIcon()}
 		>
-			{isHidden ? "Show" : "Hide"}
+			{isHidden ? "显示" : "隐藏"}
 		</ActionMenuItem>
 	);
 }

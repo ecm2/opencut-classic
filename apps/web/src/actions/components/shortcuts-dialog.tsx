@@ -110,7 +110,7 @@ export function ShortcutsDialog({
 		<Dialog open={isOpen} onOpenChange={onOpenChange}>
 			<DialogContent className="flex max-h-[80vh] max-w-2xl flex-col p-0">
 				<DialogHeader>
-					<DialogTitle>Keyboard shortcuts</DialogTitle>
+					<DialogTitle>键盘快捷键</DialogTitle>
 				</DialogHeader>
 
 				<DialogBody className="scrollbar-thin grow overflow-y-auto">
@@ -140,7 +140,7 @@ export function ShortcutsDialog({
 				</DialogBody>
 				<DialogFooter>
 					<Button variant="destructive" onClick={resetToDefaults}>
-						Reset to default
+						恢复默认
 					</Button>
 				</DialogFooter>
 			</DialogContent>
@@ -193,7 +193,7 @@ function ShortcutItem({
 							})}
 						</div>
 						{index < displayKeys.length - 1 && (
-							<span className="text-muted-foreground text-xs">or</span>
+							<span className="text-muted-foreground text-xs">或</span>
 						)}
 					</div>
 				))}

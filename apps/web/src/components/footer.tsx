@@ -17,17 +17,17 @@ type CategoryLinks = Record<Category, FooterLink[]>;
 
 const links: CategoryLinks = {
 	resources: [
-		{ label: "Roadmap", href: "/roadmap" },
-		{ label: "Changelog", href: "/changelog" },
-		{ label: "Blog", href: "/blog" },
-		{ label: "Privacy", href: "/privacy" },
-		{ label: "Terms of use", href: "/terms" },
+		{ label: "开发计划", href: "/roadmap" },
+		{ label: "更新日志", href: "/changelog" },
+		{ label: "博客", href: "/blog" },
+		{ label: "隐私政策", href: "/privacy" },
+		{ label: "使用条款", href: "/terms" },
 	],
 	company: [
-		{ label: "Contributors", href: "/contributors" },
-		{ label: "Sponsors", href: "/sponsors" },
-		{ label: "Brand", href: "/brand" },
-		{ label: "About", href: `${SOCIAL_LINKS.github}/blob/main/README.md` },
+		{ label: "贡献者", href: "/contributors" },
+		{ label: "赞助者", href: "/sponsors" },
+		{ label: "品牌", href: "/brand" },
+		{ label: "关于", href: `${SOCIAL_LINKS.github}/blob/main/README.md` },
 	],
 };
 
@@ -49,7 +49,7 @@ export function Footer() {
 							<span className="text-lg font-bold">OpenCut</span>
 						</div>
 						<p className="text-muted-foreground mb-5 text-sm md:text-left">
-							The privacy-first video editor that feels simple to use.
+							注重隐私、简单易用的视频编辑器。
 						</p>
 						<div className="flex justify-start gap-3">
 							<Link
@@ -114,7 +114,7 @@ export function Footer() {
 				<div className="flex flex-col items-start justify-between gap-4 pt-2 md:flex-row">
 					<div className="text-muted-foreground flex items-center gap-4 text-sm">
 						<span>
-							© {new Date().getFullYear()} OpenCut, All Rights Reserved
+							© {new Date().getFullYear()} OpenCut，保留所有权利
 						</span>
 					</div>
 				</div>

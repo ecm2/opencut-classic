@@ -150,7 +150,7 @@
   --breakpoint-xs: 30rem;
 
   /* Typography */
-  --font-sans: var(--font-inter), sans-serif;
+  --font-sans: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
 
   /* Font sizes */
   --text-xs: 0.72rem;

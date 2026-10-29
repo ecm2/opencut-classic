@@ -90,14 +90,14 @@ const ASSET_SECTIONS: AssetSection[] = [
 			{
 				src: "/logos/opencut/text.svg",
 				theme: "dark",
-				label: "Text",
+				label: "文字",
 				width: 1760,
 				height: 400,
 			},
 			{
 				src: "/logos/opencut/text-light.svg",
 				theme: "light",
-				label: "Text",
+				label: "文字",
 				width: 1760,
 				height: 400,
 			},
@@ -109,7 +109,7 @@ export default function BrandPage() {
 	return (
 		<BasePage
 			maxWidth="6xl"
-			title="Brand"
+			title="品牌"
 			description={
 				<>
 					Download OpenCut brand assets for use in your projects.{" "}
